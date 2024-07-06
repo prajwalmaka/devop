@@ -15,4 +15,11 @@ pipeline {
             }
         }
     }
+            stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add your test commands here, e.g., mvn test
+                sh 'mvn test'
+            }
+        }
 }
